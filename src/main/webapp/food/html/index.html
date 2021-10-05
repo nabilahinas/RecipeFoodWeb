@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anara Indonesia</title>
+    <link rel="stylesheet" href="/food/css/style.css">
+    <link rel="icon" href="/food/img/anara_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">ANARA INDONESIA<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Chef</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+           
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="row">
+            <img class="bg" src="https://image.freepik.com/free-vector/cute-bakery-chef-girl-smiling-uniform-mascots-cartoon-art-illustration_56104-571.jpg" style="margin-top:20px;"/>
+            <div class="content">
+                <h2>Your Favourite Meal</h2>
+                <p>An easy way to get healthy food with a variety of healthy food choices from abroad.
+                    Let's create cool moments while cooking</p>
+                <a href="#" class="btn" style="margin-top: 20px;">Get Started</a>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <img class="bg" src="https://image.freepik.com/free-vector/pizza-maker-concept-illustration_114360-3085.jpg"/>
+            
+            <div class="col30">
+                <h2 class="titleText"><span>Who </span>are we?</h2>
+                <p>Anara is a platforn for a daily meal kit in an effort to prevent Non-communicable Diseases in Indonesia. We have a vision and mission that are our foundation in making Anara, namely: <br><br>
+                    * Making Anara a platform that makes cooking easier for Indonesias<br>
+                    * Improe the quality of lifeof the community, especially those with non-communicable diseases<br>
+                    * Improve the welfare of local farmers<br><br>
+                    We aim to contribute to educating the public and spreading the positive impact of cooking and
+                    consuming healthy food so that it can prevent and reduce the number of deaths caused by various
+                    non-communicable diaseases in Indonesia.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Our <span>R</span>ecipes</h2>
+            <p>Anara provides delicious recipes and lezan foods that come from abroad.  <br>
+                Here you can taste all the healthy and unique foods.
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/food/img/gochujang.jpg">
+                </div>
+                <div class="text">
+                    <h3>Korean Gochujang</h3>
+                    <p><a href="/food/html/booknow.html">See more</a></p>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/food/img/soop.jpg">
+                </div>
+                <div class="text">
+                    <h3>White Soop With Udon</h3>
+                    <p><a href="/food/html/booknow.html">See more</a></p>
+                   
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/food/img/burger.jpg">
+                </div>
+                <div class="text">
+                    <h3>Monster Burger with Mozarella</h3>
+                    <p><a href="/food/html/booknow.html">See more</a></p>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chicken.jpg'>
+                </div>
+                <div class="text">
+                    <h3>Chicken Souvlaki Bowl</h3>
+                    <p><a href="/food/html/booknow.html">See more</a></p>
+                  
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/tomato.jpeg'>
+                </div>
+                <div class="text">
+                    <h3>Pizza Tomato</h3>
+                    <p><a href="/food/html/booknow.html">See more</a></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">View All</a>
+        </div>
+    </section> -->
+
+    <section class="recipes" id="recipes">
+        <div class="title black">
+            <h2 class="titleText">Our <span>R</span>ecipes</h2>
+            <p>Anara provides delicious recipes and lezan foods that come from abroad.  <br>
+                Here you can taste all the healthy and unique foods.
+            </p>
+        </div>
+        <div class="content">    
+            <div class="box">
+            <div id="recipesList">
+            </div>
+            <div class="title">
+            <a href="#" class="btn">View All</a>
+            </div> 
+        </div>
+    </section>
+
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">Our <span>C</span>hefs</h2>
+            <p>Anara works closely with leading chefs from within and outside the country who are experienced in the
+                culinary field, <br>
+                so the recipes we provide to our customers are delicious and healthy</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chef1.jpg'>
+                </div>
+                <div class="text">
+                    <h3>Chef Arnold</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chef2.jpg'>
+                </div>
+                <div class="text">
+                    <h3>Chef Juna</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chef.png'>
+                </div>
+                <div class="text">
+                    <h3>Chef Marina</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chef4.jpg'>
+                </div>
+                <div class="text">
+                    <h3>Chef Renata</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">They <span>S</span>aid About Us</h2>
+            <p>Anara has many customers who love our food. <br>
+                This is evident from the many testimonials that our customers provide
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/manu.jpg'>
+                </div>
+                <div class="text">
+                    <p><b>Manu Rios</b></p>
+                    <p>Song Writer</p>
+                    <h3>"Since I used anara, my food has been varied, the taste is delicious, the website easy to access"</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/cinta.jpg'>
+                </div>
+                <div class="text">
+                    <p><b>Cinta Laura Khiel</b></p>
+                    <p>Teacher</p>
+                    <h3>"This is the first time I have found a platform that provides delicious and healthy food. Recommended to try guys"</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/zayn.jpg'>
+                </div>
+                <div class="text">
+                    <p><b>Zayn Malik</b>></p>
+                    <p>Singer</p>
+                    <h3>"Anara provides food that is different from the others. that's what makes me always addicted to try all the recipes"</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>We always appreciate feedback and new business inquiries</p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 300px; height: 250px; margin: 0 20px 20px 0" allowfullscreen></iframe>
+          
+            <form name="userForm" ng-app="SignForm" ng-controller="MyController" 
+                method="POST" novalidate>
+                <div class="inputBox">
+                    <div class="form-container table-container">
+                        <div class="form-group">
+                            <label>Your name</label>
+                                <input ng-model="username" type="text" placeholder="Name" class="form-control"
+                                    name="username" type="text" id="username" required="true">
+                                <small ng-show="userForm.username.$invalid && userForm.username.$touched"
+                                    class="help-block text-danger">
+                                    Enter your name
+                                </small>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input ng-model="useremail" requiredtype="email" placeholder="Email" class="form-control"
+                                name="useremail" type="text" id="useremail" required="true">
+                            <small ng-show="userForm.useremail.$invalid && userForm.useremail.$touched"
+                                class="help-block text-danger">
+                                Enter your email
+                            </small>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea ng-model="usermessage" type="text" placeholder="Message" class="form-control"
+                                name="usermessage" type="text" id="usermessage" required="true"></textarea>
+                            <small ng-show="userForm.usermessage.$invalid && userForm.usermessage.$touched"
+                                class="help-block text-danger">
+                                Enter your message
+                            </small>
+                        </div>
+                       
+                    </div>
+                    <button type="submit" class="btn btn-success" onclick="save_user();">
+                        Send
+                    </button>  
+            </form>
+            
+
+        </div>
+    
+    </section>
+    
+
+    <Footer>
+        <div id="footer_contact">
+            <div class="wrapper">
+                <div class="footer">
+                    <div class="footer-section">
+                        <h3>Anara Indonesia</h3>
+                        <p>Blok M, No 5, Jakarta Selatan</p>
+                            <p>Postal Code : 41345</p>
+                            <p>Indonesia</p>
+                    </div>
+                        
+                        <div class="footer-section">
+                            <h3>Contact</h3>
+                            <p>
+                                <strong>Phone:</strong>+62 877876 033152
+                                
+                            </p>
+                            <p><strong>Email:</strong> anaraindonesia@gmail.com</p>
+                        </div>
+                       
+                        
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong><span>Nabilah Inas Amany & Putri Arina Kamilia</span></strong>. All Rights Reserved
+          </div>
+    </Footer>
+
+    <script>
+        var myModule = angular.module('SignForm', []);
+        myModule.controller('MyController', function ($scope) {
+            $scope.alertMe = function (isvalid) {
+                if (isvalid) {
+                    alert('Thank you for send message! We happy cathcing up with you ');
+                }
+            };
+        });
+
+
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <script src="/food/js/users.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA8u7XwehSdtb3M5m6DUHlG2zaO3pD5CrI",
+            authDomain: "anarafood-318506.firebaseapp.com",
+            databaseURL: "https://anarafood-318506-default-rtdb.asia-southeast1.firebasedatabase.app/",
+            projectId: "anarafood-318506",
+            storageBucket: "anarafood-318506.appspot.com",
+            messagingSenderId: "576631374074",
+            appId: "1:576631374074:web:5d96b24422a09ccca40943",
+            measurementId: "G-GT8PS2XDNT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/food/js/users.js"></script>
+    <script>
+        var databaseRef = firebase.database().ref('recipes');
+        databaseRef.once('value', function (snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+			  				var childKey = childSnapshot.key;
+			  				var childData = childSnapshot.val();
+			  				var id = childKey;
+			  				var username = childData.username;
+			  				var description = childData.description;
+                            var ingredients = childData.ingredients;
+			  				var div = document.getElementById('recipesList');
+			  				div.innerHTML += '<div class="box"><div class="text"><h2><b>'+username+'</b></h2><p>'+description+'</p><h3>'+ingredients+'</h3></div></div>';
+			  			});
+                    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anara Indonesia</title>
+    <link rel="stylesheet" href="/food/css/style1.css">
+    <link rel="icon" href="/food/img/anara_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">ANARA INDONESIA<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">About</a></li>
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">Chef</a></li>
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="/food/html/index.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="recipes" id="recipes">
+        <div class="title white">
+            <h2 class="titleText">About <span>A</span>nara Recipes</h2>
+            <p>Anara has many customers who love our food. <br>
+                This is evident from the many testimonials that our customers provide
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src='/food/img/chicken.jpg'>
+                </div>
+                <div class="text">
+                    <p><b>Chicken Souvlaki Bowl</b></p>
+                    <p>Description</p>
+                    <h3>"▢1/2 cup buttermilk<br>
+                        ▢1/2 cup mayonnaise<br>
+                        ▢6 tablespoons sour cream<br>
+                        ▢1 tablespoon red onion minced<br>
+                        ▢1 tablespoon fresh dill minced<br>
+                        ▢1 tablespoon fresh parsley minced<br>
+                        ▢1 clove garlic minced<br>
+                        ▢1 teaspoon fresh lemon juice<br>
+                        ▢Pinch of sugar<br>
+                        ▢Salt and freshly ground black pepper"</h3>
+                </div>
+            </div>
+    </section>
+
+    
+    
+
+    <Footer>
+        <div id="footer_contact">
+            <div class="wrapper">
+                <div class="footer">
+                    <div class="footer-section">
+                        <h3>Anara Indonesia</h3>
+                        <p>Blok M, No 5, Jakarta Selatan</p>
+                            <p>Postal Code : 41345</p>
+                            <p>Indonesia</p>
+                    </div>
+                        
+                        <div class="footer-section">
+                            <h3>Contact</h3>
+                            <p>
+                                <strong>Phone:</strong>+62 877876 033152
+                                
+                            </p>
+                            <p><strong>Email:</strong> anaraindonesia@gmail.com</p>
+                        </div>
+                       
+                        
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong><span>Nabilah Inas Amany & Putri Arina Kamilia</span></strong>. All Rights Reserved
+          </div>
+    </Footer>
+
+    <script>
+        var myModule = angular.module('SignForm', []);
+        myModule.controller('MyController', function ($scope) {
+            $scope.alertMe = function (isvalid) {
+                if (isvalid) {
+                    alert('Thank you for send message! We already send your Healthy Food!');
+                }
+            };
+        });
+
+
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

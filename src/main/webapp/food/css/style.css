@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+body
+{
+    min-height: 1000px;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-color: #FFDFD2;
+    background-size: cover;
+}
+.banner .content
+{
+    max-width: 650px;
+    text-align:center;
+}
+.banner .content h2
+{
+    font-size: 3.5em;
+    color: #111;
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: #111;
+    
+}
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #F9AB7E;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 200px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+    
+
+   
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{ 
+    color: #F9AB7E;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.logo
+{
+    background: url('/food/img/anara.png'); 
+    background-size: auto; 
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+ color: #A64B37;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header .navigation li a:hover
+{
+    color: #F9AB7E;
+}
+section 
+{
+    padding: 100px;
+}
+.row
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col30
+{
+    padding : 30px;
+    position: relative;
+    width: 100%;
+}
+.titleText
+{
+   
+    color:#A86A30;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    
+    color: #F9AB7E;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+ .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+ .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+
+.recipes
+{
+    background: url("/food/img/sushi.jpg");
+    background-size: cover;
+}
+.black .titleText,
+.black p
+{
+    color: #fff;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.recipes .content .box
+{
+    width: 600px
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 85%;
+}
+.recipes .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.recipes .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recipes .content .box .text
+{
+    text-align: center;
+}
+.recipes .content .box .text p
+{
+    color: #111;
+    font-style: normal;
+}
+.recipes .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.expert .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.expert .content .box
+{
+    width: 250px;
+    margin: 15px;
+}
+.expert .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .text
+{
+    padding: 15px 0 5px; 
+}
+.expert .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+
+.testimonials
+{
+    background: url("/food/img/sushi.jpg");
+    background-size: cover;
+}
+.white .titleText,
+.white p
+{
+    color: #fff;
+}
+
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.testimonials .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 85%;
+}
+.testimonials .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .text
+{
+    text-align: center;
+}
+.testimonials .content .box .text p
+{
+    color: #111;
+    font-style: normal;
+}
+.testimonials .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+.contact
+{
+    background: url('/food/img/bgbrown.jpeg');
+    background-size: cover;
+    
+}
+.contactForm
+{
+    padding: 75px;
+    background: #F2E4DF;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 1800px;
+    max-height: 780px;
+    margin-top: 50px;
+    position: relative;
+    opacity: 90%;
+    
+    
+}
+.contactForm h3
+{
+    color: #111;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.contactForm .inputBox .form-group small
+{
+    color: red;
+}
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrightText p
+{
+    color: #333;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header .sticky
+    {
+    padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li 
+    {
+        list-style: none;
+        margin-left: 0;
+    }
+    header .navigation li a 
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('/food/img/menu.jpg');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2 
+    {
+        font-size: 3em;
+        color: #111;
+    }
+    .row 
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content
+    {
+        margin-top: 20px;
+    }
+    .menu .content .box
+    {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx
+    {
+        height: 260px;
+    }
+    .title
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .title .black
+    {
+        text-align: center;
+    }
+    .titleText .recipes
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .recipes .content .box .recipesList
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .recipes .content .box
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+    .testimonials .content .box
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm
+    {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-width: 480px)
+{
+    .banner .content h2
+    {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+#footer_contact{
+    background: #F2E4DF;
+    padding: 50px 0px 50px 0px;
+
+}
+.footer{
+    width:  100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+h3{
+    font-family: 'Poppins', sams-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #A64B37;
+    width: 100%;
+    line-height: 50px;
+
+}
+.copyright{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+.recipes .content .box
+{
+    width: auto;
+/*     margin: 20px;
+    padding: 40px; */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 85%;
+}
+.recipes .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.recipes .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recipes .content .box .text
+{
+    text-align: center;
+    width: auto;
+    padding: 0 20px;
+}
+.recipes .content .box .text p
+{
+    color: #111;
+    font-style: normal;
+}
+.recipes .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
